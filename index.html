@@ -24,63 +24,94 @@ body
 -->
 
 <body class="page-grid">
-<header class="header">
-    <h1 class="text-background-box">Suyash Maharjan</h1>
-    <nav>
-        <ul>
-            <li><a href=""><strong>About Me</strong></a></li>
-            <li><a href=""><strong>Work</strong></a></li>
-            <li><a href=""><strong>Contact Me</strong></a></li>
-            <li><a href=""><strong>Resume</strong></a></li>
+    <header class="header">
+        <h1 class="text-background-box">Suyash Maharjan</h1>
+        <nav>
+            <ul class="flexbox flexbox-right">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="">Resume</a></li>
 
-        </ul>
-    </nav>
-</header>
+            </ul>
+        </nav>
+    </header>
 
-<figure class="hero-image"><!-- hero image  -->
-    <img src="https://picsum.photos/id/1/5000/3000" alt:"A regular guy sitting on a table using his laptop and having coffee. " >
-    <figcaption><h2 class="text-background-box">A simple guy!</h2></figcaption>
-</figure>
-<main class="main">
-    <section id="about-me" class="section-grid">
-        <h3 class="section-heading" >About Me</h3>
-        <div>
-            <p>Another approach you can take is to name the grid areas. Instead of counting or naming
-            the grid lines, you can use these named areas to position items in the grid. This is
-            done with the grid-template property on the grid container and a grid-area property
-            on the grid items. The code in listing 6.7 shows an example of this. The code in listing 6.7 shows an example of this. Again, this code produces exactly the same result as the previous layout (listings 6.4 and 6.6). It's an alternate syntax that can be used instead. Update your stylesheet to match these styles.</p><br>
-            <p>The code in listing 6.7 shows an example of this. Again, this code produces exactly
-            the same result as the previous layout (listings 6.4 and 6.6). It's an alternate syntax
-            that can be used instead. Update your stylesheet to match these styles.</p>
-        </div>
-    </section>
-    <section id="work"  class="section-grid"><!-- section 2 of the main  -->
-        <h3 class="section-heading" >Work</h3>
-       <div class="picture-grid">
-        <figure class="featured" >
-            <img src="https://picsum.photos/id/348/3872/2592" alt=""> 
-
-             <figcaption class="text-background-box"><h4>1st</h4></figcaption>
-        </figure>
-        <figure>
-            <img src="https://picsum.photos/id/113/4168/2464" alt="">
-            <figcaption class="text-background-box"><h4>2nd</h4></figcaption>
-        </figure>
-        <figure>
-            <img src="https://picsum.photos/id/119/3264/2176" alt="">
-            <figcaption class="text-background-box"><h4>3rd</h4></figcaption>
-        </figure>
-        <figure>
-            <img src="https://picsum.photos/id/126/4272/2511" alt="">
-            <figcaption class="text-background-box"><h4>4th</h4></figcaption>
-        </figure>
-        <figure>
-            <img src="https://picsum.photos/id/143/3600/2385" alt=""> 
-            <figcaption class="text-background-box"><h4>5th</h4></figcaption>
-        </figure>
-       </div> 
-    </section>
-</main>
+    <figure class="hero-image"><!-- hero image  -->
+        <img src="https://picsum.photos/id/1/5000/3000"
+            alt:"A regular guy sitting on a table using his laptop and having coffee. ">
+        <figcaption>
+            <h2 class="text-background-box">A simple guy!</h2>
+        </figcaption>
+    </figure>
+    <main class="content">
+        <section id="about-me" class="section-grid"><!-- section 1 of the content  -->
+            <h3 class="section-heading">About<br> Me</h3>
+            <div>
+                <p>Another approach you can take is to name the grid areas. Instead of counting or naming
+                    the grid lines, you can use these named areas to position items in the grid. This is
+                    done with the grid-template property on the grid container and a grid-area property
+                    on the grid items. The code in listing 6.7 shows an example of this. The code in listing 6.7 shows an example of this. Again, this code produces exactly the same result as the previous layout (listings 6.4 and 6.6). It's an alternate syntax that can be used instead. Update your stylesheet to match these styles.</p><br>
+                    <p>The code in listing 6.7 shows an example of this. Again, this code produces exactly
+                    the same result as the previous layout (listings 6.4 and 6.6). It's an alternate syntax
+                    that can be used instead. Update your stylesheet to match these styles.</p>
+            </div>
+        </section>
+        <section id="work" class="section-grid"><!-- section 2 of the content  -->
+            <h3 class="section-heading">Work</h3>
+            <div class="picture-grid">
+                <figure class="featured">
+                    <a href="https://github.com/SimpleSuyash/horiseon-social-solution-services.git">
+                        <img src="https://picsum.photos/id/348/3872/2592" alt="">
+                        <figcaption class="text-background-box">
+                            <h4>1st</h4>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://github.com/SimpleSuyash/horiseon-social-solution-services.git">
+                        <img src="https://picsum.photos/id/113/4168/2464" alt="">
+                        <figcaption class="text-background-box">
+                            <h4>2nd</h4>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://github.com/SimpleSuyash/horiseon-social-solution-services.git">
+                        <img src="https://picsum.photos/id/119/3264/2176" alt="">
+                        <figcaption class="text-background-box">
+                            <h4>3rd</h4>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure><a href="https://github.com/SimpleSuyash/horiseon-social-solution-services.git">
+                        <img src="https://picsum.photos/id/126/4272/2511" alt="">
+                        <figcaption class="text-background-box">
+                            <h4>4th</h4>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://github.com/SimpleSuyash/horiseon-social-solution-services.git">
+                        <img src="https://picsum.photos/id/143/3600/2385" alt="">
+                        <figcaption class="text-background-box">
+                            <h4>5th</h4>
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
+        </section>
+        <section id="contact-me" class="section-grid"><!-- section 3 of the content  -->
+            <h3 class="section-heading">Contact<br> Me</h3>
+            <nav>
+                <ul class="flexbox flexbox-space-between">
+                    <li><a href="tel:0450332707">0450332707</a></li>
+                    <li><a href="mailto:suyash@y7mail.com">suyash@y7mail.com</a></li>
+                    <li><a href="https://github.com/SimpleSuyash">GitHub</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
 
 </body>
 
