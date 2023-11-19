@@ -1,0 +1,74 @@
+
+
+
+:root{
+    box-sizing: border-box;
+    font-size: calc(1vw +0.6em);
+}
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+.grid-container{
+    display: grid;
+    row-gap: 2em;
+    grid-template-areas: 
+        'header header'
+        'hero-image hero-image'
+        'about-me bio'
+        'work portfolio'
+        'contact contact-nav';
+ }
+ .header{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    background-color: #000;
+    align-items: baseline;
+    width: 100vw;
+ }
+ .header a{
+    color: #fff;
+    letter-spacing: 1px;
+ }
+ .header h1{
+      margin:2em 0 0.5em 0; 
+ }
+
+ .header ul{
+    display:flex;
+    justify-content: right;
+    margin-right: 3em;
+ }
+
+.header li{
+    margin-left: 1em;
+    border-bottom: 1px solid #fff;
+    padding: 0 0.3em;
+    
+}
+
+.decorative-box{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 0 0.2em 0.2em 0;
+    text-shadow:  0 0 2px #414040;
+    text-align: right;
+   
+}
