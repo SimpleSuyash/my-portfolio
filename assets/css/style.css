@@ -1,6 +1,10 @@
+    
+
 :root{
+    --page-margin-right: 4em;
     box-sizing: border-box;
     font-size: calc(1vw +0.6em);
+
 }
 *, *::before,*::after{
     box-sizing: inherit;
@@ -8,38 +12,36 @@
     padding: 0;
 }
 body {
-   
+
     font-family: Helvetica, Arial, sans-serif;
 }
 
-p {
-    font-size: 16px;
-}
 a{
-    text-decoration:none;
+    text-decoration: none;
 }
+p{
+    text-align: justify;
+}
+
 ul{
     list-style-type: none;
 }
 
 .decorative-box{
     background-color: #fff;
-    padding: 5px;
-    border-radius: 0 0.2em 0.2em 0;
+    padding: 0.2em;
+    border-radius: 0 5px 5px 0;
     text-shadow:  0 0 2px #414040;
     text-align: right;
    
 }
 
-.grid-container{
+.page-grid{
     display: grid;
     grid-template-areas: 
-        'header header'
-        'hero-image hero-image'
-        'about-me bio'
-        'work portfolio'
-        'contact contact-nav';
-      
+                        'header'
+                        'hero-image'
+                        'main';
  }
  .header{
     grid-area: header;
@@ -54,40 +56,57 @@ ul{
     letter-spacing: 1px;
  }
  .header h1{
-      margin:2em 0 0.5em 0; 
+      margin: 2em 0 0.5em 0; 
  }
 
  .header ul{
-    display:flex;
+    display: flex;
     justify-content: right;
-    margin-right: 3em;
+    margin-right: var(--page-margin-right);
  }
 
 .header li{
     margin-left: 1em;
     border-bottom: 1px solid #fff;
     padding: 0 0.3em;
-    
 }
 
 
 .hero-image{
-    grid-area:hero-image;
+    grid-area: hero-image;
     position: relative; 
    
 
 }
 .hero-image img{
     width: 100%;
-    height:350px ;
+    height: 300px ;
     object-fit: cover;
 
 }
 
 .hero-image figcaption{
     position: absolute;
-    bottom: 15px;
-    right: 50px;
+    bottom: 1.5em;
+    right: var(--page-margin-right);
 
 }
+.main{
+    grid-area: main;
+}
+.main section{
+    margin-top: 2em;
+    margin-right: var(--page-margin-right);
+}
 
+.about-me{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+}
+.section-heading{
+   text-align: right;
+   border-right: 1px solid #000;
+   padding-right: 0.4em;
+   margin-right: 2em;
+}
