@@ -1,4 +1,4 @@
-    
+
 
 :root{
     --page-margin-right: 4em;
@@ -14,11 +14,15 @@
 body {
 
     font-family: Helvetica, Arial, sans-serif;
+    color: #000;
+    padding-bottom: 2em;
 }
 
-a{
+a, a:link, a:visited{
     text-decoration: none;
+    color: #000;
 }
+
 p{
     text-align: justify;
 }
@@ -27,7 +31,7 @@ ul{
     list-style-type: none;
 }
 
-.decorative-box{
+.text-background-box{
     background-color: #fff;
     padding: 0.2em;
     border-radius: 0 5px 5px 0;
@@ -35,13 +39,26 @@ ul{
     text-align: right;
    
 }
+.flexbox{
+    display: flex;
+
+}
+.flexbox-right{
+    justify-content: right;
+}
+.flexbox-space-between{
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+ 
+}
 
 .page-grid{
     display: grid;
     grid-template-areas: 
                         'header'
                         'hero-image'
-                        'main';
+                        'content';
  }
  .header{
     grid-area: header;
@@ -60,8 +77,6 @@ ul{
  }
 
  .header ul{
-    display: flex;
-    justify-content: right;
     margin-right: var(--page-margin-right);
  }
 
@@ -91,15 +106,15 @@ ul{
     right: var(--page-margin-right);
 
 }
-.main{
-    grid-area: main;
+.content{
+    grid-area: content;
 }
-.main section{
+.content section{
     margin-top: 2em;
     margin-right: var(--page-margin-right);
 }
 
-.about-me{
+.section-grid{
     display:grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
@@ -109,4 +124,49 @@ ul{
    border-right: 1px solid #000;
    padding-right: 0.4em;
    margin-right: 2em;
+   font-size: 2em;
+   font-weight:600;
+   
+}
+
+
+.picture-grid{
+    display: grid;
+    /* sets an implicit width and auto fills the gap */
+    /* implicit num of columns, min width 325px */
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    
+    /* 	Place items to fill any holes in the grid */
+    grid-auto-flow:dense;
+    grid-auto-rows: 1fr;
+    
+    grid-gap: 1em;
+   
+}
+.picture-grid figure{
+    position: relative;
+}
+.picture-grid img {
+    width: 100%;
+    height:100%; 
+     /* object-fit:fill;  */
+}
+.picture-grid .featured {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.picture-grid figcaption{
+    position: absolute;
+    bottom: 2em;
+}
+.header a, .content a{
+    font-weight: bolder;
+}
+
+
+@media (max-width: 840px){
+    .picture-grid{
+            grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+
+    }
 }
