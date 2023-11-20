@@ -36,5 +36,5 @@ My portfolio webpage contains information about myself, links to my deployed web
 ## Link to Deployed Application
 
 <ul>https://github.com/SimpleSuyash/my-portfolio.git</ul>
-<ul>https://simplesuyash.github.io/myportfolio</ul>
+<ul>https://simplesuyash.github.io/my-portfolio/</ul>
 
