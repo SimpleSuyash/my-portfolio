@@ -2,7 +2,6 @@
     --page-margin-right: 4em;
     box-sizing: border-box;
     font-size: calc(1vw +0.6em);
-
 }
 
 *,
@@ -82,6 +81,16 @@ ul {
 }
 
 
+.header a {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-left: 0.3em;
+    padding-right: 0.5em;
+    margin-left: 1em;
+
+}
+
 
 .header h1 {
     margin: 2em 0 0.5em 0;
@@ -92,8 +101,9 @@ ul {
 .header img{
      align-self: flex-end;
      border-radius: 50%;
-     margin-left: -13px;
-     width: 75px;
+     margin-left: -0.8em;
+     width: 4em;
+     margin-right: 2em;
  }
 
 
@@ -102,6 +112,7 @@ ul {
     margin-left: auto;
     /* sets the right indentation of the page */
     margin-right: var(--page-margin-right);
+    text-align: center;
 }
 
 .header nav a {
@@ -213,4 +224,5 @@ ul {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 
     }
+   
 }
