@@ -180,7 +180,14 @@ ul {
     /* implicit num of columns, min width 325px */
     grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
 }
-
+.picture-grid figcaption {
+    bottom: 2em;
+    position: absolute;
+}
+.picture-grid figcaption span{
+    font-size: x-small;
+    font-weight: normal;
+}
 .picture-grid figure {
     position: relative;
 }
