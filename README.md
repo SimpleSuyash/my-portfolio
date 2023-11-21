@@ -28,10 +28,22 @@ My portfolio webpage contains information about myself, links to my deployed web
 <p>My portfolio contains the sample of my previous work. Also, on the top are my full name in big and bold letter, my profile photo icon, and navigation links that connect to the corresponding sections of the page. It also has a big hero image with my slogan  on it. When the employers click on the images that shows my previous work, then they will be taken to appropriate gitHub pages. For easy identification, my first deployed webpage has been featured on the page with bigger picture. The webpage is fluid and responsive. It can be view on various screens and devices and the webpage layout will adapt to user's viewport accordingly.</p>
 
 ## Screenshot
-
-<img alt="Landscape printscreen of the webpage" src="./assets/images/landscape-view.png">
-<img alt="Portrait printscreen of the webpage" src="./assets/images/portrait-view.png">
-<img alt="iPhone SE printscreen of the webpage" src="./assets/images/iPhoneSE-view.png">
+<figure>
+	<img alt="Landscape printscreen of the webpage" src="./assets/images/landscape-view.png">
+	<figcaption>Landscape view</figcaption>
+</figure>
+<figure>
+	<img alt="Portrait printscreen of the webpage" src="./assets/images/portrait-view.png">
+	<figcaption>Protrait View</figcaption>
+</figure>
+<figure>
+	<img alt="Portrait printscreen of the webpage" src="./assets/images/tablet-view.png">
+	<figcaption>Tablet View</figcaption>
+</figure>
+<figure>
+	<img alt="iPhone SE printscreen of the webpage" src="./assets/images/smartphone-view.png">
+	<figcaption>Smartphone View</figcaption>
+</figure>
 
 ## Link to Deployed Application
 
