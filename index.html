@@ -25,32 +25,32 @@ body
 
 <body class="page-grid">
     <header class="header">
-        <h1 class="text-background-box">Suyash Maharjan</h1>
-        <img src="assets/images/passportPhoto.jpg"
+        <div class="flexbox">
+            <h1 class="panel panel-name">Suyash Maharjan</h1>
+            <img src="assets/images/passportPhoto.jpg"
         alt =" Suyash's profile photo icon" >
+        </div>
 
-        <nav>
-            <ul class="flexbox">
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-                <li><a href="">Resume</a></li>
+                <nav>
+                <a href="#about-me">About Me</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact-me">Contact Me</a>
+                    <a href="">Resume</a>
+                </nav> 
+      
 
-            </ul>
-        </nav>
     </header>
-
 
     <figure class="hero-image"><!-- hero image  -->
         <img src="https://picsum.photos/id/1/5000/3000"
             alt ="A regular guy sitting on a table using his laptop and having coffee. ">
-        <figcaption>
+        <figcaption class="panel">
             <h2 class="text-background-box">A simple guy!</h2>
         </figcaption>
     </figure>
     <main class="content">
-        <section id="about-me" class="section-grid"><!-- section 1 of the content  -->
-            <h3 class="section-heading">About<br> Me</h3>
+        <section id="about-me" class="section"><!-- section 1 of the content  -->
+            <h3 class="section-heading"><span class="break">About</span>Me</h3>
             <div>
                            <p>Hi, I'm Suyash Maharjan. I am originally from Nepal. I live in Tallawong, NSW.
                 I am a dad of two little boys :) I don't have any particular hobbies.
@@ -67,14 +67,14 @@ body
             </p>
             </div>
         </section>
-        <section id="work" class="section-grid"><!-- section 2 of the content  -->
+        <section id="work" class="section"><!-- section 2 of the content  -->
             <h3 class="section-heading">Work</h3>
             <div class="picture-grid">
                 <figure class="featured">
                     <a href="https://github.com/SimpleSuyash/horiseon-social-solution-services.git">
                         <img src="https://picsum.photos/id/348/3872/2592"
                          alt="Horiseon Social Solution Services Code Refactoring Project">
-                        <figcaption class="text-background-box">
+                        <figcaption class="panel">
                             <h4>Surf Report</h4>
                             <span>MERN Stack</span>
                         </figcaption>
@@ -83,7 +83,7 @@ body
                 <figure>
                     <a href="">
                         <img src="https://picsum.photos/id/113/4168/2464" alt="">
-                        <figcaption class="text-background-box">
+                        <figcaption class="panel">
                             <h4>LED Wall</h4>
                             <span>Node/loT</span>
                         </figcaption>
@@ -92,7 +92,7 @@ body
                 <figure>
                     <a href="">
                         <img src="https://picsum.photos/id/119/3264/2176" alt="">
-                        <figcaption class="text-background-box">
+                        <figcaption class="panel">
                             <h4>Calculator</h4>
                             <span>React/JavaScript/CSS</span>
                         </figcaption>
@@ -100,7 +100,7 @@ body
                 </figure>
                 <figure><a href="">
                         <img src="https://picsum.photos/id/126/4272/2511" alt="">
-                        <figcaption class="text-background-box">
+                        <figcaption class="panel">
                             <h4>Pastel Puzzels</h4>
                             <span>MERN Stack</span>
                         </figcaption>
@@ -109,7 +109,7 @@ body
                 <figure>
                     <a href="">
                         <img src="https://picsum.photos/id/143/3600/2385" alt="">
-                        <figcaption class="text-background-box">
+                        <figcaption class="panel">
                             <h4>Run Buddy</h4>
                             <span>HTML/CSS</span>
                         </figcaption>
@@ -117,19 +117,20 @@ body
                 </figure>
             </div>
         </section>
-        <section id="contact-me" class="section-grid"><!-- section 3 of the content  -->
-            <h3 class="section-heading">Contact<br> Me</h3>
+        <section id="contact-me" class="section"><!-- section 3 of the content  -->
+            <h3 class="section-heading"><span class="break">Contact</span>Me</h3>
             <nav>
-                <ul class="flexbox flexbox-space-between">
-                    <li><a href="tel:0450332707">0450332707</a></li>
-                    <li><a href="mailto:suyash@y7mail.com">suyash@y7mail.com</a></li>
-                    <li><a href="https://github.com/SimpleSuyash">GitHub</a></li>
-                </ul>
+                
+                    <a href="tel:0450332707">0450332707</a>
+                    <a href="mailto:suyash@y7mail.com">suyash@y7mail.com</a>
+                    <a href="https://github.com/SimpleSuyash">GitHub</a>
+                
             </nav>
         </section>
     </main>
 
 
+    
 </body>
 
 </html>
