@@ -147,7 +147,8 @@ ul {
     border-right: 3px solid #3d3939;
     /* justify-self: flex-end; */
 }
-.section-heading .break::after{
+
+.section-heading .break::after {
     content: "\a";
     white-space: pre;
 }
@@ -227,9 +228,10 @@ ul {
         padding: 0;
         align-self: center;
     }
-    .section-heading .break::after{
+
+    .section-heading .break::after {
         content: " ";
-        white-space: normal; 
+        white-space: normal;
     }
 }
 
