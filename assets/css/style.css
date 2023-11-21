@@ -57,52 +57,13 @@ ul {
     justify-content: space-between;
     align-items: baseline;
     background-color: #000;
-
     padding-top: 2em;
 }
-
-
-    display: flex;
-    grid-area: header;
-    width: 100%;
-}
-
-
-.header a {
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    letter-spacing: 1px;
-    padding-left: 0.3em;
-    padding-right: 0.5em;
-    margin-left: 1em;
-
-}
-
-
-.header h1 {
-    margin: 2em 0 0.5em 0;
-    padding-left: 2em;
-    padding-right: 0.5em;
-}
-
-.header img{
-     align-self: flex-end;
-     border-radius: 50%;
-     margin-left: -0.8em;
-     width: 4em;
-     margin-right: 2em;
- }
-
-
 
 .header nav {
     display: flex;
     margin-right: var(--page-margin-right);
-
     justify-content: space-between;
-
-    text-align: center;
-
 }
 
 .header nav a {
@@ -280,7 +241,6 @@ ul {
         font-size: 1em;
     }
 
-
     .header {
         flex-direction: column;
         align-items: center;
@@ -292,7 +252,6 @@ ul {
         ;
         margin-left: var(--page-margin-right);
     }
-
 
 
 }
