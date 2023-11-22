@@ -29,9 +29,24 @@ My portfolio webpage contains information about myself, links to my deployed web
 
 ## Screenshot
 
-<img alt="Landscape printscreen of the webpage" src="./assets/images/landscape-view.png">
-<img alt="Portrait printscreen of the webpage" src="./assets/images/portrait-view.png">
-<img alt="iPhone SE printscreen of the webpage" src="./assets/images/iPhoneSE-view.png">
+<figure>
+	<figcaption> Wide screen view </figcaption>
+	<img alt="Landscape printscreen of the webpage" src="./assets/images/landscape-view.png">
+</figure>
+<figure>
+	<figcaption> Portrait screen view </figcaption>
+	<img alt="Landscape printscreen of the webpage" src="./assets/images/portrait-view.png">
+</figure>
+<figure>
+	<figcaption> Tablet view </figcaption>
+	<img alt="Landscape printscreen of the webpage" src="./assets/images/tablet-view.png">
+</figure>
+<figure>
+	<figcaption> Smartphone view </figcaption>
+	<img alt="Landscape printscreen of the webpage" src="./assets/images/smartphone-view.png">
+</figure>
+
+
 
 ## Link to Deployed Application
 
