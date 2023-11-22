@@ -35,15 +35,15 @@ My portfolio webpage contains information about myself, links to my deployed web
 </figure>
 <figure>
 	<figcaption> Portrait screen view </figcaption>
-	<img alt="Landscape printscreen of the webpage" src="./assets/images/portrait-view.png">
+	<img alt="Portrait printscreen of the webpage" src="./assets/images/portrait-view.png">
 </figure>
 <figure>
 	<figcaption> Tablet view </figcaption>
-	<img alt="Landscape printscreen of the webpage" src="./assets/images/tablet-view.png">
+	<img alt="Tablet printscreen of the webpage" src="./assets/images/tablet-view.png">
 </figure>
 <figure>
 	<figcaption> Smartphone view </figcaption>
-	<img alt="Landscape printscreen of the webpage" src="./assets/images/smartphone-view.png">
+	<img alt="Smartphone printscreen of the webpage" src="./assets/images/smartphone-view.png">
 </figure>
 
 
