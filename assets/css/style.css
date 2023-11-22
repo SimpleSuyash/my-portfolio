@@ -189,6 +189,18 @@ ul {
     width: 100%;
 }
 
+.picture-grid .label{
+    /* width: em; */
+    position:absolute;
+    bottom: 2em;
+    line-height:0.7em;
+    padding-top: 0.5em;
+}
+
+.picture-grid .label span{
+    font-size: small;
+}
+
 /* ----------------------------------------- Media Queries -----------------------------------------  */
 
 
