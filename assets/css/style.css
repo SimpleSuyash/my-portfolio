@@ -117,8 +117,6 @@ ul {
         justify-items:stretch; */
 }
 
-
-
 .section div,
 .section nav {
     flex: 1 1 75%;
@@ -147,7 +145,8 @@ ul {
     border-right: 3px solid #3d3939;
     /* justify-self: flex-end; */
 }
-.section-heading .break::after{
+
+.section-heading .break::after {
     content: "\a";
     white-space: pre;
 }
@@ -191,48 +190,6 @@ ul {
 }
 
 /* ----------------------------------------- Media Queries -----------------------------------------  */
-/* Smartphone */
-@media (max-width: 768px) {
-    :root {
-        font-size: 0.875em;
-    }
-
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header nav a+a {
-        margin-left: 0em;
-    }
-
-
-
-    .header nav {
-        align-self: stretch;
-        flex-direction: column;
-        margin-left: var(--page-margin-right);
-    }
-
-    .section {
-        flex-direction: column;
-    }
-
-    .section h3 {
-        border-right: none;
-        border-bottom: 3px solid #3d3939;
-        flex: 1 1 100%;
-        margin: 0.3em 0;
-        padding: 0;
-        align-self: center;
-    }
-    .section-heading .break::after{
-        content: " ";
-        white-space: normal; 
-    }
-}
-
 
 
 /* Tablets */
@@ -249,9 +206,62 @@ ul {
     .header nav {
         align-self: stretch;
         margin-bottom: 0.5em;
-        ;
+        margin-left: var(--page-margin-right);
+    }
+}
+
+/* Smartphone */
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 0.875em;
+    }
+
+
+    .header {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header nav a+a {
+        margin-left: 0em;
+    }
+
+
+    .header nav {
+        align-self: stretch;
+        /* layout for nav */
+        flex-direction: column;
+        /* align-items: stretch; */
+        /* layout for nav items*/
         margin-left: var(--page-margin-right);
     }
 
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section h3 {
+        border-right: none;
+        border-bottom: 3px solid #3d3939;
+        flex: 1 1 100%;
+        margin: 0.3em 0;
+        padding: 0;
+    }
+
+    .section-heading .break::after {
+        content: " ";
+        white-space: normal;
+    }
+
+    .section nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section nav a {
+        margin: 0.2em 0;
+    }
 
 }
