@@ -6,67 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Suyash's Portfolio">
     <meta name="keywords" content="Suyash's resume, Suyash's portfolio">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <title>Suyash's Portfolio </title>
+    <title>Suyash's Portfolio | HOME </title>
 </head>
-<!-- 
 
-body
-    header
-    hero image
-    main    
-        section 1
-            h3 + div
-        section 2
-            h3 + div(picture grid)
-        section 3
-            h3 + div(nav)
--->
-
-<body class="page-grid">
+<body>
     <header class="header">
-        <div class="flexbox">
+        <div>
             <h1 class="panel panel-name">Suyash Maharjan</h1>
-            <img src="assets/images/passportPhoto.jpg"
-        alt =" Suyash's profile photo icon" >
+            <img src="assets/images/passport-photo.jpg" alt=" Suyash's profile photo icon">
         </div>
-
-                <nav>
-                <a href="#about-me">About Me</a>
-                    <a href="#work">Work</a>
-                    <a href="#contact-me">Contact Me</a>
-                    <a href="http://docs.google.com/gview?url=https://simplesuyash.github.io/my-portfolio/assets/docs/Suyash-Resume-2021.docx&embedded=true">Resume</a>
-                </nav> 
-      
-
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact-me">Contact Me</a>
+            <a href="#resume">Resume</a>
+        </nav>
     </header>
-
     <figure class="hero-image"><!-- hero image  -->
         <img src="https://picsum.photos/id/1/5000/3000"
-            alt ="A regular guy sitting on a table using his laptop and having coffee. ">
+            alt="A regular guy sitting on a table using his laptop and having coffee. ">
         <figcaption class="panel">
             <h2 class="text-background-box">A simple guy!</h2>
         </figcaption>
     </figure>
-
-
     <main class="content">
         <section id="about-me" class="section"><!-- section 1 of the content  -->
-            <h3 class="section-heading"><span class="break">About</span>Me</h3>
+            <h3 class="section-heading">
+                <span class="break">About </span>Me
+            </h3>
             <div>
-                           <p>Hi, I'm Suyash Maharjan. I am originally from Nepal. I live in Tallawong, NSW.
-                I am a dad of two little boys :) I don't have any particular hobbies.
-                However, I like reading high fantasy books, walking, strolling and hiking.
-                Not sure, napping can be considered a hobby, but I love it.</p><br>
+                <p>Hi, I'm Suyash Maharjan. I am originally from Nepal. I live in Tallawong, NSW.
+                    I am a dad of two little boys :) I don't have any particular hobbies.
+                    However, I like reading high fantasy books, walking, strolling and hiking.
+                    Not sure, napping can be considered a hobby, but I love it.</p>
 
-            <p>Currently, I am working fulltime at the South Eastern Local Health
-                District as a Patient Services Assistant. I have a degree in application
-                development. I know/used to know Java, Java EE, Python - a little bit,
-                c# etc.</p><br>
+                <p>Currently, I am working fulltime at the South Eastern Local Health
+                    District as a Patient Services Assistant. I have a degree in application
+                    development. I know/used to know Java, Java EE, Python - a little bit,
+                    c# etc.</p>
 
-            <p>I am doing coding bootcamp at Syd Uni hoping that it will help me land a
-                coding job. My contact detail is Suyash@y7mail.com
-            </p>
+                <p>I am doing coding bootcamp at Syd Uni hoping that it will help me land a
+                    coding job. My contact detail is Suyash@y7mail.com
+                </p>
             </div>
         </section>
         <section id="work" class="section"><!-- section 2 of the content  -->
@@ -74,85 +57,69 @@ body
             <div class="picture-grid">
                 <figure class="featured">
                     <a href="https://github.com/SimpleSuyash/horiseon-social-solution-services.git">
-                        <!-- <div> -->
+                        
                         <img src="./assets/images/Horiseon-Inc.jpg"
                          alt="Horiseon Social Solution Services Code Refactoring Project">
 
-                        <div class="panel label">
+                        <div class="panel">
                             <h4>Horiseon Inc</h4>
-                            <span>HTML/CSS</span>
+                            <small>HTML/CSS</small>
                         </div>
                         
-                    <!-- </div> -->
+                    
                     </a>
                 </figure>
                 <figure>
                     <a href="">
                         <img src="https://picsum.photos/id/113/4168/2464" alt="">
-                        <!-- <figcaption class="panel">
+                   
+                        <div class="panel">
                             <h4>LED Wall</h4>
-                            <span>Node/loT</span>
-                        </figcaption> -->
-                        <div class="panel label">
-                            <h4>LED Wall</h4>
-                            <span>Node/loT</span>
+                            <small>Node/loT</small>
                         </div>
                     </a>
                 </figure>
                 <figure>
                     <a href="">
                         <img src="https://picsum.photos/id/119/3264/2176" alt="">
-                        <!-- <figcaption class="panel">
+                        
+                        <div class="panel">
                             <h4>Calculator</h4>
-                            <span>React/JavaScript/CSS</span>
-                        </figcaption> -->
-                        <div class="panel label">
-                            <h4>Calculator</h4>
-                            <span>React/JavaScript/CSS</span>
+                            <small>React/JavaScript/CSS</small>
                         </div>
                     </a>
                 </figure>
                 <figure><a href="">
                         <img src="https://picsum.photos/id/126/4272/2511" alt="">
-                        <!-- <figcaption class="panel">
+                        
+                        <div class="panel">
                             <h4>Pastel Puzzels</h4>
-                            <span>MERN Stack</span>
-                        </figcaption> -->
-                        <div class="panel label">
-                            <h4>Pastel Puzzels</h4>
-                            <span>MERN Stack</span>
+                            <small>MERN Stack</small>
                         </div>
                     </a>
                 </figure>
                 <figure>
                     <a href="">
                         <img src="https://picsum.photos/id/143/3600/2385" alt="">
-                        <!-- <figcaption class="panel">
+                        
+                        <div class="panel">
                             <h4>Run Buddy</h4>
-                            <span>HTML/CSS</span>
-                        </figcaption> -->
-                        <div class="panel label">
-                            <h4>Run Buddy</h4>
-                            <span>HTML/CSS</span>
+                            <small>HTML/CSS</small>
                         </div>
                     </a>
                 </figure>
+
             </div>
         </section>
         <section id="contact-me" class="section"><!-- section 3 of the content  -->
             <h3 class="section-heading"><span class="break">Contact</span>Me</h3>
             <nav>
-                
-                    <a href="tel:0450332707">0450332707</a>
-                    <a href="mailto:suyash@y7mail.com">suyash@y7mail.com</a>
-                    <a href="https://github.com/SimpleSuyash">GitHub</a>
-                
+
+                <a href="tel:0450332707">0450332707</a>
+                <a href="mailto:suyash@y7mail.com">suyash@y7mail.com</a>
+                <a href="https://github.com/SimpleSuyash">GitHub</a>
+
             </nav>
         </section>
     </main>
-
-
-    
 </body>
-
-</html>
