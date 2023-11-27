@@ -26,9 +26,11 @@ p{
 }
 .header h1{
     /* font-size: 3em; */
-    font-size: calc(2.5vw + 0.2em);
+    font-size: 3.5rem;
     font-weight: bold;
     display: inline-block;
+    z-index: 1;
+    padding-bottom: 0.9rem;
 }
 .header div{
     display: flex;
@@ -38,12 +40,12 @@ p{
 }
 .header img{
     /* width: 5.5em; */
-    width: 4vw;
+    width: calc(1vw + 5rem);
     border-radius: 50%;
-    margin-left: -0.65vw;
+    margin-left: -0.8rem;
 }
 .header nav a{
-    font-size: calc(1.5vw + 0.2em);
+    font-size: calc(1vw + 0.8rem);
     color: #fff;
     /* padding: 0.5em; */
     border-bottom: 2px solid #fff;
@@ -59,7 +61,8 @@ p{
     position: relative;
 }
 .hero-image img{
-    max-height: 20vw;
+    /* max-height: 25rem; */
+    max-height: clamp(15rem, 30vw + 10rem, 35rem);
     width: 100%;
     object-fit: cover;
 }
@@ -68,7 +71,7 @@ p{
     position: absolute;
     /* sets the right indentation of the page */
     right: var(--page-indent-right);
-    font-size: 1.75vw;
+    font-size: calc(1vw + 0.8rem);
     font-weight: bold;
 }
 .content {
@@ -85,7 +88,7 @@ p{
     align-items:stretch;
 }
 .section-heading{
-    font-size: calc(2.8vw + 0.2em);
+    font-size: calc(1vw + 2.2rem);
     /* font-weight: 600; */
     opacity: 0.85;
     border-right: 2px solid #000;
@@ -98,7 +101,7 @@ p{
 }
 
 .section p{
-    font-size:calc(1vw + 0.2em ) ;
+    font-size:calc(1vw + 0.5rem ) ;
     text-align: justify;
 }
 .section nav {
@@ -110,7 +113,7 @@ p{
 .section nav a {
     color: #000;
     border-bottom: 2px solid #000;
-    font-size: calc(1.3vw + 0.2em);
+    font-size: calc(1.3vw + 0.5rem);
     text-align: center;
     font-weight: bolder;
 }
@@ -153,16 +156,16 @@ p{
 .picture-grid .panel{
 
     position:absolute;
-    bottom: 5vw;
+    bottom: 2em;
     line-height:1;
     /* x, y offsets, blur & colour */
     box-shadow: 2px 5px 3px #363535;
 }
 .picture-grid h4{
-    font-size:calc(1vw + 0.2em ) ;
+    font-size:calc(1vw + 0.2rem ) ;
 }
 .picture-grid{
-    font-size: calc(0.8vw + 0.2em);
+    font-size: calc(0.8vw + 0.2rem);
 }
 /* ----------------------------------------- Media Queries -----------------------------------------  */
 
@@ -194,7 +197,7 @@ p{
 
     .header {
         align-items: center;
-         flex-direction: row;
+         flex-direction: column;
     }
 
     .header nav a+a {
